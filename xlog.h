@@ -3,6 +3,8 @@
 
 #define LOG_RESULT(action, ...) LOG_DBG("%s = %d", #action, action(__VA_ARGS__))
 
+#define ASSERT_NOT_NULL(action, value) __ASSERT(value != NULL, "%s got: NULL", #action);
+
 #define ASSERT_RESULT(action, ...)                      \
     {                                                   \
         LOG_DBG("performing: %s", #action); \
