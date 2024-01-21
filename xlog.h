@@ -12,7 +12,7 @@
         __ASSERT(res == 0, "%s got: %d", #action, res); \
     }
 
-#define SUCCESS(action, ...)                      \
+#define SURE(action, ...)                      \
     {                                                   \
         int res = action(__VA_ARGS__);                  \
         __ASSERT(res == 0, "unable to [%s] err: %d", #action, res); \
