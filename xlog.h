@@ -37,4 +37,6 @@
         }                                                                    \
     }
 
+#define fallbacks(s, ...) fallback(s, s, __VA_ARGS__)
+
 #endif
